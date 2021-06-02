@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="../styles/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+    <script type="text/javascript" src="../scripts/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script type="text/javascript" src="../scripts/Engineer/engineer_dashboard.js"></script>
+
+    <!-- <script src="js/moment.min.js"></script> -->
+    <link href="../styles/style.css" rel="stylesheet">
+
+</head>
+<body>
+    
+</body>
+</html>
+
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0  shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+  <button style="margin-right: 80px;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid" >
+  <div class="row ">
+      <nav id="sidebarMenu" style="top: 48px;height: 100vh;" class="col-md-3 col-lg-2 d-md-block bg-white    sidebar  collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="dashboard-engineer.html">
+                    <span data-feather="home"></span>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="line-control.html">
+                    <span data-feather="file"></span>
+                    Lines
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="yard-monitor.html">
+                    <span data-feather="file"></span>
+                    Yards
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="reports.html">
+                    <span data-feather="file"></span>
+                   Reports
+                  </a>
+                </li>
+    
+            </ul>
+            
+    
+          </div>
+        </nav>
+  
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h4">Dashboard</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <button type="button" class="btn btn-sm  ">
+              <input readonly type="datetime-local" class="form-control" id="clock">
+          
+            </button>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="p-3 border rounded">
+            <div class="" style="display: flex; ">
+            <div class="" style="display: flex; margin-top: 13px;">
+              <h6   style="margin-right: 0px; height: 35px;border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn  border border-dark  btn-light  ">User</h6>
+              <h6   style="border-radius: 0px; height:35px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Info</h6>
+            </div>
+            <div>
+              <img src="../images/engineer.png" style="margin-bottom: 5px; margin-left: 5px;" width="64px" height="64px" >
+            </div>
+            </div>         
+
+            <div style="margin-bottom: 10px;" class="border-bottom">
+            </div>
+            
+            <div class="row ">
+
+            <div class="col-md-auto" style="display: flex;">
+            
+              <h6   style="margin-right: 0px; min-width: 110px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">ID</h6>
+              <h6   style="border-radius: 0px; min-width:  300px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">25934</h6>
+  
+            </div> 
+            <div class="col-md-auto" style="display: flex;">
+            
+              <h6   style="margin-right: 0px; min-width: 110px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">Name</h6>
+              <h6   style="border-radius: 0px; min-width: 300px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">Mohamed Ahmed Hassan</h6>
+  
+            </div> 
+            <!-- <h6 class="py-1">Age:</h6> -->
+            <div class="col-md-auto" style="display: flex;">
+            
+              <h6   style="margin-right: 0px;min-width: 110px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">Age</h6>
+              <h6   style="border-radius: 0px; min-width:  300px;  border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">21</h6>
+  
+            </div> 
+            <!-- <h6 class="py-1">Occupation:</h6> -->
+            <div  class="col-auto">
+
+            <div  style="display: flex;">
+            
+              <h6   style="margin-right: 0px; min-width: 100px;border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">Occupation</h6>
+              <h6   style="border-radius: 0px; min-width:  300px;  border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">Engineer</h6>
+  
+            </div> 
+            </div>
+            
+            <div  class="col-auto">
+            <div style="display: flex;">
+            
+              <h6   style="margin-right: 0px; min-width: 110px;border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">Email</h6>
+              <h6   style="border-radius: 0px; min-width:  300px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">mohamed@email.com</h6>
+  
+            </div> 
+          </div>
+          </div>
+        </div>
+
+          
+
+
+      
+        
+        <div class="p-3 my-3 border rounded">
+          <form id="task-form">
+            <div class="row">
+              <div class="col-xl-auto">
+              <input placeholder="Description" required id="description-table" type="text" class="form-control" id="description" style="margin-top: 15px ;">
+            </div>
+            <div class="col-xl-auto">
+              <input  placeholder="DueDate" required id="date-table" type="date" class="form-control" id="dueDate" style="margin-top: 15px;">
+            </div>
+            <div class="col-xl-auto">
+              <input placeholder="Notes" id="notes-table" type="text" class="form-control" id="notes" style="margin-top: 15px;" >
+            </div>
+
+              <div class="col-xl-auto" style="display: flex; margin-top: 15px;">
+                <select id="assigned-to-select" style="margin-right: 10px;" class="form-select " >
+                  <option selected>Select Technician</option>
+                  <option value="Mohamed ">Mohamed</option>
+                  <option value="Hassan">Hassan</option>
+                  <option  value="Ali">Ali</option>
+                </select>
+                <button  type="submit" class="btn btn-primary col-lg-auto">Submit</button>
+              </div> 
+            </div>
+            </form>
+          </div>
+  
+
+        <!-- Tasks -->
+        <div style="overflow-x: auto;" class="p-3 my-3 border rounded"> 
+            <table id="task-table" class="table table-r">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Due Date</th>
+                    <th scope="col">Notes</th>
+
+                    <th scope="col">Assigned To</th>
+                    <th scope="col">Status</th>
+                    <th scope="col"></th>
+
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                  <td>
+
+                    <div style="max-width: 500px;max-height: 100px;overflow-y: auto;">
+                      Ensure all machines work properly for inspection
+                    </div>
+                  </td>
+                    <td>
+                        2021-08-02
+                    </td>
+                    <td >
+                        <div style="max-width: 300px; max-height: 100px;overflow-y: auto;">
+
+                        </div>
+                    </td>
+                    <td style="max-width: 40px;overflow: auto;white-space: nowrap;">
+                      Me
+                    </td>
+                    <td id="progress-1">
+                      In Progress
+                    </td>
+                  <td>
+                    <button id="progress-btn-1" class="btn btn-sm btn-success">Complete</button>
+                  </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                  <td>
+
+                    <div style="max-width: 500px;max-height: 100px;overflow-y: auto;">
+                      Check newely aquired machines for malfunctions
+                    </div>
+                  </td>
+                    <td>
+                        2021-11-01
+                    </td>
+                    <td >
+                        <div style="max-width: 300px; max-height: 100px;overflow-y: auto;">
+
+                        </div>
+                    </td>
+                    <td style="max-width: 40px;overflow: auto;white-space: nowrap;">
+                      Me
+                    </td>
+                    <td id="progress-2">
+                      In Progress
+                    </td>
+                  <td>
+                    <button id="progress-btn-2" class="btn btn-sm btn-success">Complete</button>
+                  </td>
+                  </tr>
+                </tbody>
+              </table>
+
+      
+              </div>
+  
+      </main>
+    </div>
+  </div>

@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="../styles/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+    <script type="text/javascript" src="../scripts/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link href="../styles/style.css" rel="stylesheet">
+
+    <!-- <script type="module" src="js/line/engineer_line.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script type="text/javascript" src="../scripts/Manager/manager_line.js"></script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0  sticky-top shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+  <button style="margin-right: 80px;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+      <nav id="sidebarMenu" style="top: 48px;height: 100vh;" class="col-md-3 col-lg-2 d-md-block   sidebar collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">   <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="dashboard-manager.html">
+                <span data-feather="home"></span>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="line-manager.html">
+                <span data-feather="file"></span>
+                Lines
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="yard-manager.html">
+                <span data-feather="file"></span>
+                Yards
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">
+                <span data-feather="file"></span>
+                Register
+              </a>
+            </li>
+
+            </ul>
+    
+          </div>
+        </nav>
+      <main  id="main" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h4">Lines</h1>
+          <div class="btn-toolbar mb-1 mb-md-0">
+              <button type="button" class="btn btn-sm  ">
+                <input readonly type="datetime-local" class="form-control" id="clock">
+              </button>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <!--Line 1 -->
+        <div style="display: block;" class="p-3 my-3 border rounded">
+          <!-- <h5 class="border-bottom py-1">Line Control 1</h5> -->
+    
+
+          <div style="display: flex;">
+            <div id="line-button-1" class="btn btn-success circle border border-dark">
+              <i id="line-icon-1" style="font-size:110px; position: relative; top: -8px; left: -18px;" class="bi bi-check"></i>
+              <!-- <i style="font-size: 40px; position: relative; top: -7px; " class="bi bi-exclamation-triangle-fill"></i> -->
+              <!-- <i id="line-icon-3" style="font-size: 70px; position: relative; top: -12px; " class="bi bi-x-octagon-fill"></i> -->
+  
+  
+            </div>
+            <div class="row" style="margin-top: 20px;" >
+              <div  style=" align-content: center; " class="col-auto">
+                <div  class="" style="display: flex;">
+              
+              <h6   style="margin-right: 0px; width:100px;  border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark ">Line No </h6>
+              <h6   style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">1</h6>
+  
+            </div>
+              <!-- <h6 class="py-1">Line Type: White Cheese</h6> -->
+              <div class="" style="display: flex;">
+              
+                <h6   style="margin-right: 0px; width:100px;  border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Line Type</h6>
+                <h6   style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">White Cheese</h6>
+    
+              </div>
+              <!-- <h6 id="line-status-3"  class="py-1">Status: Enabled</h6> -->
+              <div class="" style="display: flex;">
+              
+                <h6   style="margin-right: 0px; width:100px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Status</h6>
+                <h6 id="line-status-1"  style="border-radius: 0px; min-width: 200px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Enabled</h6>
+    
+                </div>
+                <!-- <h6 class="py-1">Assigned Engineer: Mohamed</h6> -->
+              </div>
+              <div style="   align-content: center;" class="col-auto">
+
+                <div class="" style="display: flex;">
+              
+                  <h6   style="margin-right: 0px; width: 180px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Assigned Engineer </h6>
+                  <h6 id="engineer-name-1"   style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Mohamed</h6>
+      
+                </div>
+                <!-- <h6 class="py-1">Assigned Technician: Hassan</h6> -->
+                <div class="" style="display: flex;">
+              
+                  <h6   style="margin-right: 0px;width: 180px;  border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Assigned Technician </h6>
+                  <h6  id="technician-name-1"  style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Hassan</h6>
+      
+                </div>
+             
+              </div>
+          </div>
+        </div>
+
+          <div class="progress " style="margin-top: 5px;" >
+            <div id="progress-bar-1" class="progress-bar progress-bar-animated bg-success progress-bar-striped" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        
+        <div class="row" style=" margin-top: 10px;">
+          
+          <div class="col-auto"  >
+            <div class="text-center">
+              <div class="col-form-label" >Select Engineer</div>
+            <select id="engineer-select-1"  required id="assigned-to-select" class="form-select " >
+              <option value="null" selected>Unassigned</option>
+              <option  value="Mohamed">Mohamed</option>
+              <option value="Hassan">Hassan</option>
+              <option  value="Ali">Ali</option>
+            </select>
+          </div>
+          </div>
+          <div class="col-auto"  >
+            <div class="text-center">
+              <div class="col-form-label" >Select Technician</div>
+            <select id="technician-select-1" required id="assigned-to-select"  class="form-select  " >
+              <option value="null" selected>Unassigned</option>
+              <option value="Mohamed">Mohamed</option>
+              <option value="Hassan">Hassan</option>
+              <option  value="Ali">Ali</option>
+            </select>
+          </div>
+          </div>
+          <div class="col-auto" style="margin-top: 35px;"  >
+
+          <button id="assign-btn-1" type="button" class="btn btn-success border border-dark ">Assign</button>
+          </div>          
+
+          </div>
+        </div>
+
+      <!--Line 2 -->
+         <div style="display: block;" class="p-3 my-3 border rounded">
+          <!-- <h5 class="border-bottom py-1">Line Control 1</h5> -->
+    
+
+          <div style="display: flex;">
+            <div id="line-button-2" class="btn btn-success circle border border-dark">
+              <i id="line-icon-2" style="font-size:110px; position: relative; top: -8px; left: -18px;" class="bi bi-check"></i>
+              <!-- <i style="font-size: 40px; position: relative; top: -7px; " class="bi bi-exclamation-triangle-fill"></i> -->
+              <!-- <i id="line-icon-3" style="font-size: 70px; position: relative; top: -12px; " class="bi bi-x-octagon-fill"></i> -->
+  
+  
+            </div>
+            <div class="row" style="margin-top: 20px;" >
+              <div  style=" align-content: center; " class="col-auto">
+                <div  class="" style="display: flex;">
+              
+              <h6   style="margin-right: 0px; width:100px;  border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark ">Line No </h6>
+              <h6   style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">1</h6>
+  
+            </div>
+              <!-- <h6 class="py-1">Line Type: White Cheese</h6> -->
+              <div class="" style="display: flex;">
+              
+                <h6   style="margin-right: 0px; width:100px;  border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Line Type</h6>
+                <h6   style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">White Cheese</h6>
+    
+              </div>
+              <!-- <h6 id="line-status-3"  class="py-1">Status: Enabled</h6> -->
+              <div class="" style="display: flex;">
+              
+                <h6   style="margin-right: 0px; width:100px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Status</h6>
+                <h6 id="line-status-2"  style="border-radius: 0px; min-width: 200px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Enabled</h6>
+    
+                </div>
+                <!-- <h6 class="py-1">Assigned Engineer: Mohamed</h6> -->
+              </div>
+              <div style="   align-content: center;" class="col-auto">
+
+                <div class="" style="display: flex;">
+              
+                  <h6   style="margin-right: 0px; width: 180px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Assigned Engineer </h6>
+                  <h6 id="engineer-name-2"   style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Mohamed</h6>
+      
+                </div>
+                <!-- <h6 class="py-1">Assigned Technician: Hassan</h6> -->
+                <div class="" style="display: flex;">
+              
+                  <h6   style="margin-right: 0px;width: 180px;  border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn bbtn-light border border-dark">Assigned Technician </h6>
+                  <h6  id="technician-name-2"  style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Hassan</h6>
+      
+                </div>
+              </div>
+          </div>
+        </div>
+        
+
+        <div class="progress " style="margin-top: 5px;" >
+          <div id="progress-bar-2" class="progress-bar progress-bar-animated bg-success progress-bar-striped" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      
+      <div class="row" style=" margin-top: 10px;">
+          <div class="col-auto"  >
+            <div class="text-center">
+              <div class="col-form-label" >Select Engineer</div>
+            <select id="engineer-select-2"  required id="assigned-to-select"  class="form-select fromseleect " >
+              <option value="null" selected>Unassigned</option>
+              <option  value="Mohamed">Mohamed</option>
+              <option value="Hassan">Hassan</option>
+              <option  value="Ali">Ali</option>
+            </select>
+          </div>
+          </div>
+          <div class="col-auto"  >
+            <div class="text-center">
+              <div class="col-form-label" >Select Technician</div>
+            <select id="technician-select-2" required id="assigned-to-select" class="form-select fromseleect " >
+              <option value="null" selected>Unassigned</option>
+              <option value="Mohamed">Mohamed</option>
+              <option value="Hassan">Hassan</option>
+              <option  value="Ali">Ali</option>
+            </select>
+          </div>
+          </div>
+          <div class="col-auto" style="margin-top: 35px;">
+
+          <button id="assign-btn-2" type="button" class="btn btn-success border border-dark ">Assign</button>
+          </div>          
+
+          </div>
+        </div>
+        
+
+        <!--Line 3 -->
+        <div style="display: block;" class="p-3 my-3 border rounded">
+          <!-- <h5 class="border-bottom py-1">Line Control 1</h5> -->
+    
+
+          <div style="display: flex;">
+            <div id="line-button-3" class="btn btn-success circle border border-dark">
+              <i id="line-icon-3" style="font-size:110px; position: relative; top: -8px; left: -18px;" class="bi bi-check"></i>
+              <!-- <i style="font-size: 40px; position: relative; top: -7px; " class="bi bi-exclamation-triangle-fill"></i> -->
+              <!-- <i id="line-icon-3" style="font-size: 70px; position: relative; top: -12px; " class="bi bi-x-octagon-fill"></i> -->
+  
+  
+            </div>
+            <div class="row" style="margin-top: 20px;" >
+              <div  style=" align-content: center; " class="col-auto">
+                <div  class="" style="display: flex;">
+              
+              <h6   style="margin-right: 0px; width:100px;  border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark ">Line No </h6>
+              <h6   style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">1</h6>
+  
+            </div>
+              <!-- <h6 class="py-1">Line Type: White Cheese</h6> -->
+              <div class="" style="display: flex;">
+              
+                <h6   style="margin-right: 0px; width:100px;  border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Line Type</h6>
+                <h6   style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">White Cheese</h6>
+    
+              </div>
+              <!-- <h6 id="line-status-3"  class="py-1">Status: Enabled</h6> -->
+              <div class="" style="display: flex;">
+              
+                <h6   style="margin-right: 0px; width:100px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Status</h6>
+                <h6 id="line-status-3"  style="border-radius: 0px; min-width: 200px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Enabled</h6>
+    
+                </div>
+                <!-- <h6 class="py-1">Assigned Engineer: Mohamed</h6> -->
+              </div>
+              <div style="   align-content: center;" class="col-auto">
+
+                <div class="" style="display: flex;">
+              
+                  <h6   style="margin-right: 0px; width: 180px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-light border border-dark">Assigned Engineer </h6>
+                  <h6 id="engineer-name-3"   style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Mohamed</h6>
+      
+                </div>
+                <!-- <h6 class="py-1">Assigned Technician: Hassan</h6> -->
+                <div class="" style="display: flex;">
+              
+                  <h6   style="margin-right: 0px;width: 180px;  border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn bbtn-light border border-dark">Assigned Technician </h6>
+                  <h6  id="technician-name-3"  style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Hassan</h6>
+      
+                </div>
+              </div>
+          </div>
+        </div>
+        
+        
+        <div class="progress " style="margin-top: 5px;" >
+          <div id="progress-bar-3" class="progress-bar progress-bar-animated bg-success progress-bar-striped" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      
+      <div class="row" style=" margin-top: 10px;">
+          <div class="col-auto"  >
+            <div class="text-center">
+              <div class="col-form-label" >Select Engineer</div>
+            <select id="engineer-select-3"  required id="assigned-to-select" class="form-select fromseleect " >
+              <option value="null" selected>Unassigned</option>
+              <option  value="Mohamed">Mohamed</option>
+              <option value="Hassan">Hassan</option>
+              <option  value="Ali">Ali</option>
+            </select>
+          </div>
+          </div>
+          <div class="col-auto"  >
+            <div class="text-center">
+              <div class="col-form-label" >Select Technician</div>
+            <select id="technician-select-3" required id="assigned-to-select" class="form-select " >
+              <option value="null" selected>Unassigned</option>
+              <option value="Mohamed">Mohamed</option>
+              <option value="Hassan">Hassan</option>
+              <option  value="Ali">Ali</option>
+            </select>
+          </div>
+          </div>
+          <div class="col-auto" style="margin-top: 35px;"  >
+
+          <button id="assign-btn-3" type="button" class="btn btn-success border border-dark ">Assign</button>
+          </div>          
+
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>

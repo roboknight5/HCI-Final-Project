@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    
+
+    <script src="../scripts/js/bootstrap.bundle.min.js"></script>   <!-- Bootstrap core CSS -->
+<link href="../styles/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../styles/style.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      
+    </style>
+
+    
+  </head>
+  <body>
+    
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0   shadow">
+      <a class="navbar-brand col-md-3 position-sticky col-lg-2 me-0 px-3" href="">Company name</a>
+      <button  id="collapse-button" style="margin-right: 80px;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="">Sign out</a>
+        </li>
+      </ul>
+    </header>
+    
+    <div class="container-fluid">
+      <div class="row">
+          <nav id="sidebarMenu" style="top: 48px;" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse">
+              <div class="position-sticky pt-3">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                      <span data-feather="file"></span>
+                      Profile
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="lines.html">
+                      <span data-feather="shopping-cart"></span>
+                      Lines
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="yards.html">
+                      <span data-feather="home"></span>
+                      Yards
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                      <span data-feather="bar-chart-2"></span>
+                      Report
+                    </a>
+                  </li>
+        
+                </ul>
+        
+              </div>
+            </nav>
+    
+    
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 align-content-center">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Lines Assigned</h1>
+        <div class="btn-toolbar mb-1 mb-md-0">
+          
+          <button type="button" class="btn btn-sm">
+            <input readonly type="datetime-local" class="form-control" id="clock">
+         </button>
+        </div>
+        </div>
+        <div class="p-3 my-3 border rounded">
+          <h4 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3"><a href="auto.html">White Cheese Lines: </h4></a>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Line NO.1</li>
+            <li class="list-group-item">Line NO.2</li>
+            <li class="list-group-item">Line NO.3</li>
+          </ul>
+          <h4 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3"><a href="manual.html">Yellow Cheese Lines: </h4></a>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Line NO.1</li>
+            <li class="list-group-item">Line NO.2</li>
+            <li class="list-group-item">Line NO.3</li>
+            <li class="list-group-item">Line NO.4</li>
+            <li class="list-group-item">Line NO.5</li>
+          </ul>
+        </div>
+      
+    </main>
+    
+    
+  </div>
+</div>
+
+
+    <script src="../scripts/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script>
+      const clock=document.getElementById('clock')
+      clock.value=moment(new Date()).format('YYYY-MM-DDTHH:mm')
+      setInterval(()=>clock.value=moment(new Date()).format('YYYY-MM-DDTHH:mm'),1000)
+    </script>
+    
+  </body>
+</html>

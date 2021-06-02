@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../styles/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../styles/style.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0   shadow">
+      <a class="navbar-brand col-md-3 position-sticky col-lg-2 me-0 px-3" href="">Company name</a>
+      <button  id="collapse-button" style="margin-right: 80px;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="">Sign out</a>
+        </li>
+      </ul>
+    </header>
+    
+    <div class="container-fluid">
+      <div class="row">
+          <nav id="sidebarMenu" style="top: 48px;" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse">
+              <div class="position-sticky pt-3">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="profile.html">
+                      <span data-feather="file"></span>
+                      Profile
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="task.html">
+                      <span data-feather="shopping-cart"></span>
+                      Tasks
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                      <span data-feather="bar-chart-2"></span>
+                      Report
+                    </a>
+                  </li>
+        
+                </ul>
+        
+              </div>
+            </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-1 mb-md-0">
+          
+          <button type="button" class="btn btn-sm  ">
+            <input readonly type="datetime-local" class="form-control" id="clock">
+         </button>
+        </div>
+      </div>  
+      <div class="p-3 border rounded">
+        <img src="../images/worker.jpg" width="64px" height="64px" >
+        <div style="display: flex; margin-top: 13px;">
+          <h6 style="margin-right: 0px; height: 35px;border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn  border border-dark  btn-light  ">User</h6>
+          <h6 style="border-radius: 0px; height:35px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  btn-dark">Info</h6>
+        </div>
+        <div style="display: flex; margin-top: 13px;">
+          <h6 style="margin-right: 0px; min-width: 110px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">ID</h6>
+          <h6 style="border-radius: 0px; min-width:  300px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">25934</h6>
+        </div>
+        <div style="display: flex; margin-top: 13px;">
+          <h6 style="margin-right: 0px; min-width: 110px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">Name</h6>
+          <h6 style="border-radius: 0px; min-width: 300px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light"> Ahmed Mohamed</h6>
+        </div>
+        <div style="display: flex; margin-top: 13px;">
+          <h6 style="margin-right: 0px;min-width: 110px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">Age</h6>
+          <h6 style="border-radius: 0px; min-width:  300px;  border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">21</h6>
+        </div>
+        <div style="display: flex; margin-top: 13px;">
+          <h6 style="margin-right: 0px; min-width: 110px;border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">Email</h6>
+          <h6 style="border-radius: 0px; min-width:  300px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">mohamed@email.com</h6>
+        </div>
+        <div style="display: flex; margin-top: 13px;">
+          <h6 style="margin-right: 0px; min-width: 110px; border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">Phone no</h6>
+          <h6 style="border-radius: 0px; min-width:  300px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">123456789</h6>
+        </div>
+        <div style="display: flex; margin-top: 13px;">
+          <h6 style="margin-right: 0px; min-width: 100px;border-radius: 0px; border-bottom-left-radius: 5px ; border-top-left-radius: 5px ;" class="py-1 btn btn-dark ">Occupation</h6>
+          <h6 style="border-radius: 0px; min-width:  300px;  border-bottom-right-radius: 5px; border-top-right-radius: 5px;" class="py-1 btn  border border-dark  btn-light">Line worker</h6>
+        </div>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+      
+    </main>
+  </div>
+</div>
+
+
+<script src="../scripts/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script>
+  const clock=document.getElementById('clock')
+  clock.value=moment(new Date()).format('YYYY-MM-DDTHH:mm')
+  setInterval(()=>clock.value=moment(new Date()).format('YYYY-MM-DDTHH:mm'),1000)
+</script>
+  </body>
+</html>

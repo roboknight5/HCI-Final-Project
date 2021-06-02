@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title></title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../styles/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
+    
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0   shadow">
+      <a class="navbar-brand col-md-3 position-sticky col-lg-2 me-0 px-3" href="">Company name</a>
+      <button  id="collapse-button" style="margin-right: 80px;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="">Sign out</a>
+        </li>
+      </ul>
+    </header>
+    
+    <div class="container-fluid">
+      <div class="row">
+          <nav id="sidebarMenu" style="top: 48px;" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse">
+              <div class="position-sticky pt-3">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                      <span data-feather="file"></span>
+                      Profile
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="task.html">
+                      <span data-feather="shopping-cart"></span>
+                      Tasks
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                      <span data-feather="bar-chart-2"></span>
+                      Report
+                    </a>
+                  </li>
+        
+                </ul>
+        
+              </div>
+            </nav>
+    
+    
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 align-content-center">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Tasks</h1>
+        <div class="btn-toolbar mb-1 mb-md-0">
+          
+          <button type="button" class="btn btn-sm  ">
+            <input readonly type="datetime-local" class="form-control" id="clock">
+         </button>
+        </div>
+      </div>
+        <label><h2>Yard 1</h2></label>
+        <div style="overflow-x: auto;" class="p-3 my-3 border rounded">
+          <div class="table-active">
+            <table class="table table-bordered" style="min-width: 500px;margin-right: 50px;">
+              <thead>
+              <tr>
+                <th scope="col">Task NO</th>
+                <th scope="col">Line NO.</th>
+                <th scope="col">Description</th>
+                <th scope="col">Due date</th>
+                <th scope="col">Notes</th>
+                <th scope="col">Status</th>
+                <th scope="col">Report Done</th>
+              </tr>
+              </tr>
+              <tr class="table-success">
+                <td scope="row">Task one</td>
+                <td>Line NO.1</td>
+                <td>Feed the dog</td>
+                <td>1/1/2001</td>
+                <td>Dog is ded</td>
+                <td>Completed</td>
+                <td> </td>
+              </tr>
+              <tr class="table-danger">
+                <td scope="row">Task one</td>
+                <td>Line NO.1</td>
+                <td>Clean ur ass</td>
+                <td>6/6/2006</td>
+                <td>noice</td>
+                <td>Not Completed</td>
+                <td><button type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
+              </tr>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr class="my-4">
+        <label><h2>Yard 2</h2></label>
+        <div style="overflow-x: auto;" class="p-3 my-3 border rounded">
+          <div class="table-active">
+            <table class="table table-bordered" style="min-width: 500px;margin-right: 50px;">
+              <thead>
+              <tr>
+                <th scope="col">Task NO</th>
+                <th scope="col">Line NO.</th>
+                <th scope="col">Description</th>
+                <th scope="col">Due date</th>
+                <th scope="col">Notes</th>
+                <th scope="col">Status</th>
+                <th scope="col">Report Done</th>
+              </tr>
+              </tr>
+              <tr class="table-success">
+                <td scope="row">Task one</td>
+                <td>Line NO.2</td>
+                <td>Feed the dog</td>
+                <td>1/1/2001</td>
+                <td>Dog is ded</td>
+                <td>Completed</td>
+                <td> </td>
+              </tr>
+              <tr class="table-danger">
+                <td scope="row">Task one</td>
+                <td>Line NO.2</td>
+                <td>Clean ur ass</td>
+                <td>6/6/2006</td>
+                <td>noice</td>
+                <td>Not Completed</td>
+                <td><button type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
+              </tr>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr class="my-4">
+        <label><h2>Yard 3</h2></label>
+        <div style="overflow-x: auto;" class="p-3 my-3 border rounded">
+          <div class="table-active">
+            <table class="table table-bordered" style="min-width: 500px;margin-right: 50px;">
+              <thead>
+              <tr>
+                <th scope="col">Task NO</th>
+                <th scope="col">Line NO.</th>
+                <th scope="col">Description</th>
+                <th scope="col">Due date</th>
+                <th scope="col">Notes</th>
+                <th scope="col">Status</th>
+                <th scope="col">Report Done</th>
+              </tr>
+              </tr>
+              <tr class="table-success">
+                <td scope="row">Task one</td>
+                <td>Line NO.3</td>
+                <td>Feed the dog</td>
+                <td>1/1/2001</td>
+                <td>Dog is ded</td>
+                <td>Completed</td>
+                <td> </td>
+              </tr>
+              <tr class="table-danger">
+                <td scope="row">Task one</td>
+                <td>Line NO.3</td>
+                <td>Clean ur ass</td>
+                <td>6/6/2006</td>
+                <td>noice</td>
+                <td>Not Completed</td>
+                <td><button type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
+              </tr>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    
+      
+    </main>
+  </div>
+</div>
+
+
+<script src="../scripts/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script>
+  const clock=document.getElementById('clock')
+  clock.value=moment(new Date()).format('YYYY-MM-DDTHH:mm')
+  setInterval(()=>clock.value=moment(new Date()).format('YYYY-MM-DDTHH:mm'),1000)
+</script>
+  </body>
+</html>
