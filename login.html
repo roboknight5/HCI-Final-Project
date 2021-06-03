@@ -40,44 +40,85 @@
           }
         }
       }
+
+      window.onload=()=>{
+        const emp_id=document.getElementById('emp-id')
+        const password=document.getElementById('password')
+        const role=document.getElementById('role')
+        const alert=document.getElementById('alert-error')
+
+
+
+        const form=document.getElementById('login-form')
+
+        form.addEventListener("submit",(e)=>{
+          e.preventDefault()
+          if (emp_id.value=="5" && password.value=="123"&&role.value=="Manager")
+          {
+            window.location.href ="./Manager/dashboard-manager.html"
+
+          }
+
+          if (emp_id.value=="10" && password.value=="123"&&role.value=="Engineer")
+          {
+            window.location.href="./Engineer/dashboard-engineer.html"
+
+          }
+          if (emp_id.value=="15" && password.value=="123"&&role.value=="Technician")
+          {
+            window.location.href="./technician/profile.html"
+
+          }
+
+          alert.hidden=false
+
+        })
+
+
+
+
+
+
+      }
+
+
     </script>
   </head>
   <body class="text-center">
     <main class="form-signin">
-      <form>
+      <form id="login-form">
         <img class="mb-4" src="images/logo1.jpg" alt="" width="200" height="220">
         <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
         <div class="form-floating">
-          <input type="id" class="form-control" id="floatingInput" placeholder="name@example.com" required="">
+          <input type="text" id="emp-id" class="form-control" id="floatingInput" placeholder="name@example.com" required="">
           <div class="invalid-feedback">
             Enter Topic
           </div>
           <label for="floatingInput">Employee ID</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required="">
+          <input id="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" required="">
           <div class="invalid-feedback">
             Enter Topic
           </div>
           <label for="form-floating">Password</label>
         </div>
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
+        
         <div class="select mb-4">
           <label style="margin-right: 10px;">
             Select Role
           </label>
-          <select type="select" id="role" class="form-select">
-            <option type="option">Engineer</option>
-            <option type="option">Technician</option>
-            <option type="option">Manager</option>
+          <select  type="select" id="role" class="form-select">
+            <option value="Engineer" type="option">Engineer</option>
+            <option value="Technician" type="option">Technician</option>
+            <option value="Manager" type="option">Manager</option>
           </select>
         </div>
         <div>
           <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        </div>
+        <div id=alert-error hidden class="alert alert-danger" role="alert">
+          Invalid Id or Password
         </div>
       </form>
     </main>
