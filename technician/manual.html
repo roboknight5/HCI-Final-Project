@@ -31,6 +31,45 @@
       }
     </style>
 
+    <script>
+
+      window.onload=()=>{
+        const table_1=document.getElementById('table-1')
+
+        const status_1=document.getElementById('status-1')
+
+        const btn_1=document.getElementById('btn-1')
+        btn_1.addEventListener("click",()=>{
+          table_1.className='table-success'
+          status_1.textContent='Completed'
+        })
+
+                const table_2=document.getElementById('table-2')
+
+        const status_2=document.getElementById('status-2')
+
+        const btn_2=document.getElementById('btn-2')
+        btn_2.addEventListener("click",()=>{
+          table_2.className='table-success'
+          status_2.textContent='Completed'
+        })
+
+        
+        const table_3=document.getElementById('table-3')
+
+        const status_3=document.getElementById('status-3')
+
+        const btn_3=document.getElementById('btn-3')
+        btn_3.addEventListener("click",()=>{
+          table_3.className='table-success'
+          status_3.textContent='Completed'
+        })
+
+        
+      }
+
+      </script>
+
     
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
@@ -78,6 +117,14 @@
                       Report
                     </a>
                   </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="recieved_reports.html">
+                <span data-feather="file"></span>
+                Recieved Reports
+              </a>
+            </li>
+
         
                 </ul>
         
@@ -113,20 +160,20 @@
               <tr class="table-success">
                 <td scope="row">Task one</td>
                 <td>Line NO.1</td>
-                <td>Feed the dog</td>
-                <td>1/1/2001</td>
-                <td>Dog is ded</td>
+                <td>Repair Line</td>
+                <td>6/8/2021</td>
+                <td></td>
                 <td>Completed</td>
                 <td> </td>
               </tr>
-              <tr class="table-danger">
-                <td scope="row">Task one</td>
+              <tr id="table-1" class="table-danger">
+                <td scope="row">Task two</td>
                 <td>Line NO.1</td>
-                <td>Clean ur ass</td>
-                <td>6/6/2006</td>
-                <td>noice</td>
-                <td>Not Completed</td>
-                <td><button type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
+                <td>Check line for efficeny issues</td>
+                <td>7/7/2021</td>
+                <td></td>
+                <td id="status-1" >Not Completed</td>
+                <td><button id="btn-1" type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
               </tr>
               </tr>
               </tbody>
@@ -152,20 +199,20 @@
               <tr class="table-success">
                 <td scope="row">Task one</td>
                 <td>Line NO.2</td>
-                <td>Feed the dog</td>
-                <td>1/1/2001</td>
-                <td>Dog is ded</td>
+                <td>Inspect line for malfunctions</td>
+                <td>6/8/2021</td>
+                <td></td>
                 <td>Completed</td>
                 <td> </td>
               </tr>
-              <tr class="table-danger">
-                <td scope="row">Task one</td>
+              <tr id="table-2"  class="table-danger">
+                <td scope="row">Task two</td>
                 <td>Line NO.2</td>
-                <td>Clean ur ass</td>
-                <td>6/6/2006</td>
-                <td>noice</td>
-                <td>Not Completed</td>
-                <td><button type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
+                <td>buy new tools for maintaining line</td>
+                <td>7/7/2021</td>
+                <td></td>
+                <td id="status-2">Not Completed</td>
+                <td><button id="btn-2" type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
               </tr>
               </tr>
               </tbody>
@@ -191,20 +238,20 @@
               <tr class="table-success">
                 <td scope="row">Task one</td>
                 <td>Line NO.3</td>
-                <td>Feed the dog</td>
-                <td>1/1/2001</td>
-                <td>Dog is ded</td>
+                <td>Inspect line for malfunctions</td>
+                <td>6/8/2021</td>
+                <td></td>
                 <td>Completed</td>
                 <td> </td>
               </tr>
-              <tr class="table-danger">
-                <td scope="row">Task one</td>
+              <tr id="table-3" class="table-danger">
+                <td scope="row">Task two</td>
                 <td>Line NO.3</td>
-                <td>Clean ur ass</td>
-                <td>6/6/2006</td>
-                <td>noice</td>
-                <td>Not Completed</td>
-                <td><button type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
+                <td>Instruct workers on how to operate line</td>
+                <td>7/7/2021</td>
+                <td></td>
+                <td id="status-3">Not Completed</td>
+                <td><button id="btn-3" type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
               </tr>
               </tr>
               </tbody>
@@ -226,6 +273,5 @@
   clock.value=moment(new Date()).format('YYYY-MM-DDTHH:mm')
   setInterval(()=>clock.value=moment(new Date()).format('YYYY-MM-DDTHH:mm'),1000)
 </script>
-
   </body>
 </html>

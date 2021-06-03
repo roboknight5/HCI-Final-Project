@@ -32,6 +32,46 @@
     </style>
 
     
+<script>
+
+  window.onload=()=>{
+    const table_1=document.getElementById('table-1')
+
+    const status_1=document.getElementById('status-1')
+
+    const btn_1=document.getElementById('btn-1')
+    btn_1.addEventListener("click",()=>{
+      table_1.className='table-success'
+      status_1.textContent='Completed'
+    })
+
+            const table_2=document.getElementById('table-2')
+
+    const status_2=document.getElementById('status-2')
+
+    const btn_2=document.getElementById('btn-2')
+    btn_2.addEventListener("click",()=>{
+      table_2.className='table-success'
+      status_2.textContent='Completed'
+    })
+
+    
+    const table_3=document.getElementById('table-3')
+
+    const status_3=document.getElementById('status-3')
+
+    const btn_3=document.getElementById('btn-3')
+    btn_3.addEventListener("click",()=>{
+      table_3.className='table-success'
+      status_3.textContent='Completed'
+    })
+
+    
+  }
+
+  </script>
+
+    
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
   </head>
@@ -89,122 +129,122 @@
          </button>
         </div>
       </div>
-        <label><h2>Yard 1</h2></label>
-        <div style="overflow-x: auto;" class="p-3 my-3 border rounded">
-          <div class="table-active">
-            <table class="table table-bordered" style="min-width: 500px;margin-right: 50px;">
-              <thead>
-              <tr>
-                <th scope="col">Task NO</th>
-                <th scope="col">Line NO.</th>
-                <th scope="col">Description</th>
-                <th scope="col">Due date</th>
-                <th scope="col">Notes</th>
-                <th scope="col">Status</th>
-                <th scope="col">Report Done</th>
-              </tr>
-              </tr>
-              <tr class="table-success">
-                <td scope="row">Task one</td>
-                <td>Line NO.1</td>
-                <td>Feed the dog</td>
-                <td>1/1/2001</td>
-                <td>Dog is ded</td>
-                <td>Completed</td>
-                <td> </td>
-              </tr>
-              <tr class="table-danger">
-                <td scope="row">Task one</td>
-                <td>Line NO.1</td>
-                <td>Clean ur ass</td>
-                <td>6/6/2006</td>
-                <td>noice</td>
-                <td>Not Completed</td>
-                <td><button type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
-              </tr>
-              </tr>
-              </tbody>
-            </table>
-          </div>
+      <label><h2>Yard 1</h2></label>
+      <div style="overflow-x: auto;" class="p-3 my-3 border rounded">
+        <div class="table-active">
+          <table class="table table-bordered" style="min-width: 500px;margin-right: 50px;">
+            <thead>
+            <tr>
+              <th scope="col">Task NO</th>
+              <th scope="col">Yard NO.</th>
+              <th scope="col">Description</th>
+              <th scope="col">Due date</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Status</th>
+              <th scope="col">Report Done</th>
+            </tr>
+            </tr>
+            <tr class="table-success">
+              <td scope="row">Task one</td>
+              <td>Yard NO.1</td>
+              <td>Repair Yard</td>
+              <td>6/8/2021</td>
+              <td></td>
+              <td>Completed</td>
+              <td> </td>
+            </tr>
+            <tr id="table-1" class="table-danger">
+              <td scope="row">Task two</td>
+              <td>Yard NO.1</td>
+              <td>Check Yard for efficeny issues</td>
+              <td>7/7/2021</td>
+              <td></td>
+              <td id="status-1" >Not Completed</td>
+              <td><button id="btn-1" type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
+            </tr>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <hr class="my-4">
-        <label><h2>Yard 2</h2></label>
-        <div style="overflow-x: auto;" class="p-3 my-3 border rounded">
-          <div class="table-active">
-            <table class="table table-bordered" style="min-width: 500px;margin-right: 50px;">
-              <thead>
-              <tr>
-                <th scope="col">Task NO</th>
-                <th scope="col">Line NO.</th>
-                <th scope="col">Description</th>
-                <th scope="col">Due date</th>
-                <th scope="col">Notes</th>
-                <th scope="col">Status</th>
-                <th scope="col">Report Done</th>
-              </tr>
-              </tr>
-              <tr class="table-success">
-                <td scope="row">Task one</td>
-                <td>Line NO.2</td>
-                <td>Feed the dog</td>
-                <td>1/1/2001</td>
-                <td>Dog is ded</td>
-                <td>Completed</td>
-                <td> </td>
-              </tr>
-              <tr class="table-danger">
-                <td scope="row">Task one</td>
-                <td>Line NO.2</td>
-                <td>Clean ur ass</td>
-                <td>6/6/2006</td>
-                <td>noice</td>
-                <td>Not Completed</td>
-                <td><button type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
-              </tr>
-              </tr>
-              </tbody>
-            </table>
-          </div>
+      </div>
+      <hr class="my-4">
+      <label><h2>Yard 2</h2></label>
+      <div style="overflow-x: auto;" class="p-3 my-3 border rounded">
+        <div class="table-active">
+          <table class="table table-bordered" style="min-width: 500px;margin-right: 50px;">
+            <thead>
+            <tr>
+              <th scope="col">Task NO</th>
+              <th scope="col">Yard NO.</th>
+              <th scope="col">Description</th>
+              <th scope="col">Due date</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Status</th>
+              <th scope="col">Report Done</th>
+            </tr>
+            </tr>
+            <tr class="table-success">
+              <td scope="row">Task one</td>
+              <td>Yard NO.2</td>
+              <td>Inspect Yard for malfunctions</td>
+              <td>6/8/2021</td>
+              <td></td>
+              <td>Completed</td>
+              <td> </td>
+            </tr>
+            <tr id="table-2"  class="table-danger">
+              <td scope="row">Task two</td>
+              <td>Yard NO.2</td>
+              <td>buy new tools for maintaining Yard</td>
+              <td>7/7/2021</td>
+              <td></td>
+              <td id="status-2">Not Completed</td>
+              <td><button id="btn-2" type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
+            </tr>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <hr class="my-4">
-        <label><h2>Yard 3</h2></label>
-        <div style="overflow-x: auto;" class="p-3 my-3 border rounded">
-          <div class="table-active">
-            <table class="table table-bordered" style="min-width: 500px;margin-right: 50px;">
-              <thead>
-              <tr>
-                <th scope="col">Task NO</th>
-                <th scope="col">Line NO.</th>
-                <th scope="col">Description</th>
-                <th scope="col">Due date</th>
-                <th scope="col">Notes</th>
-                <th scope="col">Status</th>
-                <th scope="col">Report Done</th>
-              </tr>
-              </tr>
-              <tr class="table-success">
-                <td scope="row">Task one</td>
-                <td>Line NO.3</td>
-                <td>Feed the dog</td>
-                <td>1/1/2001</td>
-                <td>Dog is ded</td>
-                <td>Completed</td>
-                <td> </td>
-              </tr>
-              <tr class="table-danger">
-                <td scope="row">Task one</td>
-                <td>Line NO.3</td>
-                <td>Clean ur ass</td>
-                <td>6/6/2006</td>
-                <td>noice</td>
-                <td>Not Completed</td>
-                <td><button type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
-              </tr>
-              </tr>
-              </tbody>
-            </table>
-          </div>
+      </div>
+      <hr class="my-4">
+      <label><h2>Yard 3</h2></label>
+      <div style="overflow-x: auto;" class="p-3 my-3 border rounded">
+        <div class="table-active">
+          <table class="table table-bordered" style="min-width: 500px;margin-right: 50px;">
+            <thead>
+            <tr>
+              <th scope="col">Task NO</th>
+              <th scope="col">Yard NO.</th>
+              <th scope="col">Description</th>
+              <th scope="col">Due date</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Status</th>
+              <th scope="col">Report Done</th>
+            </tr>
+            </tr>
+            <tr class="table-success">
+              <td scope="row">Task one</td>
+              <td>Yard NO.3</td>
+              <td>Inspect Yard for malfunctions</td>
+              <td>6/8/2021</td>
+              <td></td>
+              <td>Completed</td>
+              <td> </td>
+            </tr>
+            <tr id="table-3" class="table-danger">
+              <td scope="row">Task two</td>
+              <td>Yard NO.3</td>
+              <td>Instruct workers on how to operate Yard</td>
+              <td>7/7/2021</td>
+              <td></td>
+              <td id="status-3">Not Completed</td>
+              <td><button id="btn-3" type="button" class="btn btn-success" style="margin-right: 0px;">Success</button></td>
+            </tr>
+            </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
       </div>
     
       
