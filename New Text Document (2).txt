@@ -1,4 +1,0 @@
-1. page all users and reprts M
-2. delete all renduntant code O M
-3. main page text O
-4. tasks text O
