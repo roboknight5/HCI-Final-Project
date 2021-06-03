@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
 
     <link href="../styles/assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -36,7 +36,7 @@
   </button>
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="">Sign out</a>
+      <a class="nav-link" href="../index.html">Sign out</a>
     </li>
   </ul>
 </header>
@@ -180,7 +180,10 @@
             <input  placeholder="DueDate" required id="date-table" type="date" class="form-control" id="dueDate" style="margin-top: 15px;">
           </div>
           <div class="col-xl-auto">
-            <input placeholder="Notes" id="notes-table" type="text" class="form-control" id="notes" style="margin-top: 15px;" >
+            <input placeholder="Notes" id="notes-table" type="text" class="form-control"  style="margin-top: 15px;" >
+          </div>
+          <div class="col-xl-2 ">
+            <input placeholder="Line/Yard ID" id="number-table" type="number" class="form-control " min="1" max="15"     style="margin-top: 15px;min-width: auto;" >
           </div>
 
             <div class="col-xl-auto" style="display: flex; margin-top: 15px;">
@@ -209,6 +212,8 @@
                     <th scope="col">Notes</th>
 
                     <th scope="col">Assigned To</th>
+                    <th scope="col">Line/Yard No</th>
+
                     <th scope="col">Status</th>
                     <th scope="col"></th>
 

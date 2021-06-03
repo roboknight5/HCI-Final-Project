@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.83.1">
-    <title>Dashboard Template · Bootstrap v5.0</title>
+    <title>Reports</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
@@ -47,7 +44,7 @@
   </button>
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="">Sign out</a>
+      <a class="nav-link" href="../index.html">Sign out</a>
     </li>
   </ul>
 </header>
@@ -146,36 +143,46 @@
                 Enter Contact Number.
               </div>
             </div>
+          
+            <div style="margin-top: 15px;" class="row ">
+              <label style="margin-left: -10px;" class="form-label">Select Line/Yard </label>
+
+            <div class="form-check col-auto">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Line
+              </label>
+            </div>
+            <div class="form-check col-auto">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Yard
+              </label>
+            </div>
+          </div>
 
  
 
             <div class="col-md-5">
-              <label for="country" class="form-label">Line Type<span class="text-muted">(Required)</span></label>
+              <label for="country" class="form-label">Type<span class="text-muted">(Required)</span></label>
               <select class="form-select" id="line_type" required="">
                 <option value="">Choose...</option>
                 <option>Yellow Cheese</option>
                 <option>White Cheese</option>
               </select>
               <div class="invalid-feedback">
-                Please select a valid line.
+                Please select a valid type.
               </div>
             </div>
 
             <div class="col-md-5">
-              <label for="line" class="form-label">Line No.<span class="text-muted">(Required)</span></label>
+              <label for="line" class="form-label">No.<span class="text-muted">(Required)</span></label>
               <input type="text" class="form-control" id="line_no" placeholder="" required="">
               <div class="invalid-feedback">
-                Enter Line Number.
+                Enter Number.
               </div>
             </div>
 
-            <div class="col-md-3">
-              <label for="yard" class="form-label">Yard No.<span class="text-muted">(Required)</span></label>
-              <input type="text" class="form-control" id="yard_no" placeholder="" required="">
-              <div class="invalid-feedback">
-                Enter Yard Number.
-              </div>
-            </div>
 
             <div class="row-cols-1">
               <label for="topic" class="form-label">Topic.<span class="text-muted">(Required)</span></label>

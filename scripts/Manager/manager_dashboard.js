@@ -4,6 +4,8 @@ function insertTask(){
 
     const date=document.getElementById('date-table').value
 
+    const line_yard_no_val=document.getElementById('number-table').value
+
     const notes=document.getElementById('notes-table').value
 
     const assigned_to_val=document.getElementById('assigned-to-select').value
@@ -45,6 +47,13 @@ function insertTask(){
     assigned_to.style.overflow='auto'
     assigned_to.style.whiteSpace='nowrap'
     assigned_to.textContent=assigned_to_val
+
+    const line_yard_no=row.insertCell()
+    line_yard_no.style.maxWidth='40px'
+    line_yard_no.style.overflow='auto'
+    line_yard_no.style.whiteSpace='nowrap'
+    line_yard_no.textContent=line_yard_no_val
+
     const status=row.insertCell()
     status.textContent="In Progress"
 
